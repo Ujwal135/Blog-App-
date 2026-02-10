@@ -7,7 +7,7 @@ const Hero = () => {
   return (
    <div className='flex h-screen mt-15'>
 
-    <div className='bg-red-300 flex-2'></div>
+    <div className=' flex-2'></div>
     <div className=' mt-10 flex-6'><Blogs_List/> </div>
     <div className='bg-red-500 flex-2'></div>
 
@@ -16,3 +16,4 @@ const Hero = () => {
 }
 
 export default Hero
+  

@@ -6,8 +6,6 @@ const Snippits = () => {
       <div className='w-[30vw] h-[50vh] border-1 border-black '>
 
       </div>
-
-      
     </div>
   ) 
 }

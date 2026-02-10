@@ -14,17 +14,17 @@ const Slidingbar = ({open}) => {
         </li>
 
         <li className="flex items-center gap-3 p-2 rounded hover:bg-[#3c6e71] cursor-pointer font-['ibm-plex-sans']">
-          <User size={20} />
+          <User size={22} />
           {open && <span>Profile</span>}
         </li>
 
          <li className="flex items-center gap-3 p-2 rounded hover:bg-[#3c6e71] cursor-pointer font-['ibm-plex-sans']">
-          <LibraryBig  size={20} />
+          <LibraryBig  size={22} />
           {open && <span>Library</span>}
         </li>
 
         <li className="flex items-center gap-3 p-2 rounded hover:bg-[#3c6e71] cursor-pointer font-['ibm-plex-sans']">
-          <Settings size={20} />
+          <Settings size={22} />
           {open && <span>Settings</span>}
         </li>
 

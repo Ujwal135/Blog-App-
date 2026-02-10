@@ -9,7 +9,7 @@ import Slidingbar from '../Components/Slidingbar'
 
 const Home = () => {
 
-  const [open, setopen] = useState(true)
+  const [open, setopen] = useState(false)
   return (
     <div >
       {/* Top Bar  */}
