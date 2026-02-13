@@ -4,7 +4,7 @@ import React from 'react'
 const   Blogs_List = () => {
   return (
 <div className="p-5 w-full">
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6">
+  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 mt-5">
 
     {/* Author */}
     <div className="flex items-center gap-3 mb-4">

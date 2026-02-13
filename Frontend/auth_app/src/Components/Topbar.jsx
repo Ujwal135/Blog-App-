@@ -26,11 +26,11 @@ const Topbar = ({togglesidebar}) => {
 
             <Search size={28}  className="absolute left-3 text-gray-400" /> 
 
-            <input className='h-10 w-64 pl-10 pr-4 rounded-full bg-white/90 text-gray-900 
-                   focus:ring-2 focus:-[#d9d9d9] outline-none'  type="text" placeholder='Search...' />
+            <input className='h-10 w-64 pl-10 pr-4 rounded-full bg-white/90 font-bold text-gray-600 
+                   focus:ring-2 focus:ring-[#d9d9d9] outline-none'  type="text" placeholder='Search...' />
         </div>
 
-
+    
       </div> 
 
       <div className='flex gap-3 items-center'>

@@ -5,7 +5,7 @@ const Profilebutton = ({user}) => {
 
     const [open, setopen] = useState(false)
     const dropdownRef = useRef(null)
-    const navigate = useNavigate()
+    
 
 
     useEffect (()=>{
@@ -23,6 +23,8 @@ const Profilebutton = ({user}) => {
         navigate('/newhome')
     }
 
+    const navigate = useNavigate()
+
 
 
   return (  
@@ -39,7 +41,7 @@ const Profilebutton = ({user}) => {
         {/* dropdown */}
 
         { open &&   (
-            <div className='absolute right--5 mt-3 w-48 bg-white rounded-xl shadow-lg border z-50'>
+            <div className='absolute right-2 mt-3 w-48 bg-white rounded-xl shadow-lg border z-50'>
                 <div className='p-1 px-4 border-b'>
                     <p className='font-semibold'>{user ?.username}</p> 
                     <p className='text-sm text-gray-500 '>{user ?.email}</p>
@@ -47,15 +49,15 @@ const Profilebutton = ({user}) => {
 
 
                 <ul className='py-2 text-[#284b63] font-semibold px-12'>
-                    <li onClick={()=>Navigate('/Home')} className='px-4 py-2   hover:bg-gray-100 cursor-pointer'>
+                    <li onClick={()=>navigate('/')} className='px-4 py-2   hover:bg-gray-100 cursor-pointer'>
                         Home
                     </li>
 
-                    <li onClick={()=>Navigate('/profile')} className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>
+                    <li onClick={()=>navigate('/profile')} className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>
                         Profile
                     </li>
 
-                    <li onClick={()=>Navigate('/write')} className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>
+                    <li onClick={()=>navigate('/write')} className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>
                         Write
                     </li>   
 

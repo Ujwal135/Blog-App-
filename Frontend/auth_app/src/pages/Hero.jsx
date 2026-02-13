@@ -5,11 +5,15 @@ import Blogs_List from './Blogs_List'
 
 const Hero = () => {
   return (
-   <div className='flex h-screen mt-15'>
+   <div className='flex h-screen  '>
 
     <div className=' flex-2'></div>
-    <div className=' mt-10 flex-6'><Blogs_List/> </div>
-    <div className='bg-red-500 flex-2'></div>
+    
+    <div className='mt-10 flex-6 border-t-1 border-gray-400 overflow-y-auto '>
+      <Blogs_List/>
+       </div>
+
+    <div className=' flex-2 mt-10 border-t-1 border-l-1 border-gray-400'></div>
 
    </div>
   )
