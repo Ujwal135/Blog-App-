@@ -8,7 +8,7 @@ import Slidingbar from "../Components/Slidingbar";
 const Home = () => {
   const [open, setopen] = useState(false);
   return (
-    <div>
+    <div className="font-['Poppins']">
       {/* Top Bar  */}
       <div className=" w-full">
         <Topbar

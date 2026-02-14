@@ -7,7 +7,7 @@
 body{
 background-color: #d9d9d9;
 color: #284b63;
---font-display: "Poppins", sans-serif; 
+font: "Poppins"; 
 }
 
 .font-playball {

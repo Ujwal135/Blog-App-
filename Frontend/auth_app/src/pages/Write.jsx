@@ -28,7 +28,7 @@ const Write = () => {
     console.log(file);
   }
   return (
-    <div>
+    <div className="font-['Poppins']"> 
       <nav className="fixed top-0 left-0 right-0 z-50 h-16 bg-[#284b63] text-white flex items-center justify-center px-6 shadow-lg backdrop-blur-md ">
         <div className=" flex items-center justify-between w-full max-w-6xl">
           <h1 className="text-3xl font-bold ">Explore Blogs</h1>

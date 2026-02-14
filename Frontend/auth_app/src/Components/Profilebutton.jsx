@@ -29,7 +29,7 @@ const Profilebutton = ({user}) => {
 
   return (  
 
-    <div className='relative cursor-pointer'>
+    <div className='relative cursor-pointer font-["Poppins"]'>
       
       <button onClick={()=>setopen(!open)}>
         <img src={user.avtar}

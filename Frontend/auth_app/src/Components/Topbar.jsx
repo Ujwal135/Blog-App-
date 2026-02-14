@@ -14,13 +14,13 @@ const Topbar = ({togglesidebar}) => {
 
   return (
     <div className=' fixed top-0 left-0 right-0 z-50 h-16 bg-[#284b63] 
-                text-white flex items-center justify-between px-6 shadow-lg backdrop-blur-md'>
+                text-white flex items-center justify-between px-6 shadow-lg backdrop-blur-md '>
 
       <div className='flex items-center gap-6'>
 
         <button onClick={togglesidebar} className='p-2 rounded-full hover:bg-white/20 transition'><MenuIcon size={30}/></button>
 
-        <h1 className="text-3xl p-5 font-bold text-[#d9d9d9] tracking-wide "> Explore Blogs</h1>
+        <h1 className="text-3xl p-5 font-semibold text-[#d9d9d9] tracking-wide "> Explore Blogs</h1>
 
         <div className='relative flex items-center'>
 

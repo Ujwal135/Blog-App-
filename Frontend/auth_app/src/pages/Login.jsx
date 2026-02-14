@@ -77,7 +77,7 @@ function registerFormEvent(){
 
 
   return (
-    <div>
+    <div className='font-["Poppins"]'>
 
      <div className="mt-20">
         <div className="flex items-center justify-center w-screen min-h-[70vh] bg px-4">

@@ -4,7 +4,7 @@ import{Home,User,Settings,LibraryBig} from 'lucide-react'
 const Slidingbar = ({open}) => {
   return (
     <div className={`fixed top-16 left-0 h-[calc(100vh-4rem)] bg-[f843bd] text-[#d9d9d9] 
-    transition-all duration-300 shadow-lg  border-gray-500
+    transition-all duration-300 shadow-lg  border-gray-500 font-['Poppins']
      ${open ? "w-60 bg-[#284b63] ": "w-16 bg-[#284b63]"}`}>
 
       <ul className='p-4 space-y-3 text-2xl text-[#d9d9d9]'> 
