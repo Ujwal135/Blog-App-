@@ -1,4 +1,4 @@
-import { Heart,MessageSquare } from 'lucide-react'
+import { Heart,MessageSquare,BookMarked } from 'lucide-react'
 import React from 'react'
 
 const   Blogs_List = () => {
@@ -49,11 +49,14 @@ const   Blogs_List = () => {
         <MessageSquare size={18} />
         <span className="text-sm">3</span>
       </button>
+
+      <button className="flex items-center gap-1 hover:text-gray-600 transition">
+        <BookMarked size={18} />
+      </button>
     </div>
 
   </div>
 </div>
-
 
         
   )

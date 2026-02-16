@@ -9,11 +9,11 @@ const Hero = () => {
 
     <div className=' flex-2'></div>
     
-    <div className='mt-10 flex-6 border-t-1 border-gray-400 overflow-y-auto '>
+    <div className='mt-10 flex-6 border-t border-gray-400 overflow-y-auto '>
       <Blogs_List/>
        </div>
 
-    <div className=' flex-2 mt-10 border-t-1 border-l-1 border-gray-400'></div>
+    <div className=' flex-2 mt-10 border-t border-l border-gray-400'></div>
 
    </div>
   )

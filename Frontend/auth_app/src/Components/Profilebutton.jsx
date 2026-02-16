@@ -20,7 +20,7 @@ const Profilebutton = ({user}) => {
 
     function LogOut(){
         localStorage.removeItem("token");
-        navigate('/newhome')
+        navigate('/')
     }
 
     const navigate = useNavigate()

@@ -7,6 +7,7 @@ import About from './pages/About'
 import Blogs from './pages/Blogs'
 import NewHome from './pages/NewHome'
 import Write from './pages/Write'
+import Profile from './pages/Profile'
 
 
 const App = () => {
@@ -14,12 +15,14 @@ const App = () => {
   return (
     <div>
        <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<NewHome/>}/>
+          <Route path='/home' element={<Home/>}/>
           <Route path='/posts' element={<Posts/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/blogs' element={<Blogs/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path = '/write' element={<Write/>}/>
+          <Route path = '/profile' element = {<Profile/>}/>
        </Routes>
 
     </div>

@@ -19,8 +19,8 @@ class RegisterView(APIView):
         serializer = RegisterSerializer(data = request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response({'msg':'UserCreated'},status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.data,status=201)
+        return Response(serializer.errors,status=400)
         
 
     def get(self,request):
@@ -46,7 +46,7 @@ class LoginView(APIView):
         
         return Response({
             'refresh':str(refresh),
-            'access' :str(refresh.access_token),
+            'access' :str(refresh.access_token),    
             'user':{
                 'id':user.id,
                 'email':user.email,

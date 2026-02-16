@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Topbar from '../Components/Topbar'
 import bgpic from '../assets/desgine.png'
 import axios from 'axios'
+import Basic_topbar from '../Components/Basic_topbar'
 
 
 const NewHome = () => {
@@ -23,7 +24,7 @@ const NewHome = () => {
 
   return (
     <div>
-      <Topbar/>
+      <Basic_topbar/>
 
       <div className="fixed top-20 left-170 m-2 font-bold text-black text-xl font-['ibm-plex-sans'] ">
          <span> A place to read, write, and deepen your understanding   </span>
