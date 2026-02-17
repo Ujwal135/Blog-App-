@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu, MenuIcon, Search,Bell,SquarePen} from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Profilebutton from './Profilebutton';
 
 const Topbar = ({togglesidebar}) => {
@@ -12,6 +12,7 @@ const Topbar = ({togglesidebar}) => {
 
   }
 
+const navigate = useNavigate()
   return (
     <div className=' fixed top-0 left-0 right-0 z-50 h-16 bg-[#284b63] 
                 text-white flex items-center justify-between px-6 shadow-lg backdrop-blur-md '>
@@ -20,7 +21,7 @@ const Topbar = ({togglesidebar}) => {
 
         <button onClick={togglesidebar} className='p-2 rounded-full hover:bg-white/20 transition'><MenuIcon size={30}/></button>
 
-        <h1 className="text-3xl p-5 font-semibold text-[#d9d9d9] tracking-wide "> Explore Blogs</h1>
+        <h1 onClick={()=>{navigate('/home')}} className="text-3xl p-5 font-semibold text-[#d9d9d9] tracking-wide "> Explore Blogs</h1>
 
         <div className='relative flex items-center'>
 

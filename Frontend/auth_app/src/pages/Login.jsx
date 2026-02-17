@@ -66,8 +66,8 @@ const Login = () => {
       .catch((err) => {
         const backendErrors = err.response?.data;
 
-        if (backendErrors && typeof backendErrors === "object") {
-          seterrormessage(backendErrors);
+        if (backendErrors?.detail) {
+          seterrormessage(backendErrors.detail);
         } else {
           seterrormessage({ general: "Invalid credentials" });
         }

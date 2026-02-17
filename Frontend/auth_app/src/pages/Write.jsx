@@ -55,11 +55,11 @@ const Write = () => {
         </div>
       </nav>
 
-      <div className="page_Body flex justify-center mt-20">
-        <div className="bg- w-[90%] md:w-[70vw] min-h-screen px-6 md:px-12 py-10 rounded-xl shadow">
+      <div className="page_Body flex justify-center">
+        <div className="bg- w-[90%] md:w-[70vw] min-h-screen px-6 md:px-12 py-10 rounded-xl shadow ">
           <form onSubmit={publishblog} className=" w-full" action="">
             <input
-              className="w-full text-black px-4 py-4 text-5xl outline-none bg-transparent placeholder-gray-500"
+              className="w-full text-black px-4 py-4 text-5xl outline-none bg-transparent placeholder-gray-500 "
               type="text"
               value={title}
               onChange={(e) => {
