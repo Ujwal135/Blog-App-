@@ -1,7 +1,19 @@
-import React from 'react'
-import { X } from 'lucide-react'
+import React, { useState } from 'react'
+import { Target, X } from 'lucide-react'
 
 const Edit_profile = ({closemodel}) => {
+
+  const [profileEdit, setprofileEdit] = useState({
+    first_name :"",
+    last_name :""
+  })
+
+  function profileupdate(e){
+    setprofileEdit({...profileEdit,
+      [e.target.name]:e.target.value
+  })
+  }
+
   return (
     <div className='fixed inset-0 flex items-center justify-center bg-black opacity-50 z-50'>
         <div className='bg-[#d9d9d9] w-100 p-6 rounded-xl shadow-lg relative'>
@@ -13,7 +25,9 @@ const Edit_profile = ({closemodel}) => {
         </button>
 
            <h2 className="text-xl text-gray-800 font-semibold mb-4">Edit Profile</h2>
-        <form action="">
+
+
+        <form action="" onSubmit={formSubmission}> 
 
         <input
          className=' w-full text-black border p-2 mb-3 rounded' 
@@ -21,8 +35,11 @@ const Edit_profile = ({closemodel}) => {
 
         <input
           type="text"
+          name = 'first_name'
+          value = {profileEdit.first_name}
           placeholder="First Name"
           className="w-full text-black border p-2 mb-3 rounded"
+          onChange = {profileupdate}
         />
         
 

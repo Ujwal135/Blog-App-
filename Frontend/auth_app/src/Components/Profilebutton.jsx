@@ -49,7 +49,7 @@ const Profilebutton = ({user}) => {
 
 
                 <ul className='py-2 text-[#284b63] font-semibold px-12'>
-                    <li onClick={()=>navigate('/')} className='px-4 py-2   hover:bg-gray-100 cursor-pointer'>
+                    <li onClick={()=>navigate('/home')} className='px-4 py-2   hover:bg-gray-100 cursor-pointer'>
                         Home
                     </li>
 
